@@ -1,0 +1,17 @@
+/* Selector global */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Colores */
+h1 {
+  color: darkgreen;
+}
+
+h2 {
+  color: darkred;
+}
+
+p {
+  color: #076489;
+}
