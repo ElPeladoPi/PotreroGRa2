@@ -1,0 +1,39 @@
+/*NO MODIFICAR*/
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+ul {
+    width: 450px;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #4D7298;
+}
+
+li {
+    background-color: #4D7298;
+    border: 2px solid #77A6B6;
+    border-radius: .5em;
+    color: #fff;
+    padding: .5em;
+    margin: .5em;
+}
+
+/*DESDE ACA MODIFICAR*/
+/*Los elementos deben estar en tres filas ocupando a su padre, ver tarea para referencia de como debe quedar*/
+ul {
+    display: flex; /* Habilita el modo flexbox para la lista */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas */
+    justify-content: space-around; /* Distribuye los elementos uniformemente */
+}
+
+li {
+    width: calc(33.33% - 1em); /* Calcula el ancho de cada elemento para que ocupen aproximadamente un tercio del ancho total, restando el margen */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total del elemento */
+}

@@ -1,0 +1,35 @@
+/*NO MODIFICAR*/
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+.padre {
+    border: 2px solid #77A6B6;
+    border-radius: .5em;
+    width: 400px;
+    height: 300px;
+}
+
+.hijo {
+    background-color: #4D7298; 
+    color: #fff;
+    padding: .5em;
+    width: 150px;
+}
+
+/*DESDE ACA MODIFICAR*/
+/*Usar flexbox para centrar al elemento clase hijo dentro del contenedor clase padre.*/
+.padre {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+}
+
+.hijo {
+    /* no es necesario agregar nada aquí */
+}

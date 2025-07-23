@@ -1,0 +1,110 @@
+/*NO MODIFICAR*/
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+ul {
+    width: 800px;
+    height: 490px;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #4D7298;
+}
+
+li {
+    background-color: #4D7298;
+    border: 2px solid #77A6B6;
+    border-radius: .5em;
+    color: #fff;
+    padding: .5em;
+    margin: .5em;
+}
+
+/*DESDE ACA MODIFICAR*/
+/* Modificar los siguientes elementos para que se vea como en la imagen de la consigna */
+ul {
+    width: 800px;
+    height: 490px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #4D7298;
+    position: relative;
+}
+
+li {
+    background-color: #4D7298;
+    border: 2px solid #77A6B6;
+    border-radius: .5em;
+    color: #fff;
+    padding: .5em;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Posiciones exactas como la imagen */
+.l5 {  /* roberto */
+    width: 60px;
+    height: 30px;
+    top: 20px;
+    left: 20px;
+}
+
+.l1 {  /* juan */
+    width: 60px;
+    height: 30px;
+    top: 150px;
+    left: 80px;
+}
+
+.l2 {  /* cristian */
+    width: 60px;
+    height: 30px;
+    top: 240px;
+    left: 140px;
+}
+
+.l3 {  /* ramon */
+    width: 60px;
+    height: 250px;
+    top: 20px;
+    left: 200px;
+}
+
+.l4 {  /* pablo */
+    width: 60px;
+    height: 250px;
+    top: 20px;
+    left: 260px;
+}
+
+.l6 {  /* gabriel */
+    width: 60px;
+    height: 30px;
+    top: 20px;
+    left: 320px;
+}
+
+.l7 {  /* sebastian */
+    width: 60px;
+    height: 30px;
+    top: 20px;
+    left: 380px;
+}
+
+.l8 {  /* ruben */
+    width: 60px;
+    height: 30px;
+    top: 20px;
+    left: 440px;
+}

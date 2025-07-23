@@ -1,0 +1,56 @@
+/*NO MODIFICAR*/
+
+body {
+    background-color: #fff;
+    color: #333;
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+}
+
+ul {
+    width: 450px;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #4D7298;
+}
+
+li {
+    background-color: #4D7298;
+    border: 2px solid #77A6B6;
+    border-radius: .5em;
+    color: #fff;
+    padding: .5em;
+    margin: .5em;
+}
+
+/*DESDE ACA MODIFICAR*/
+/*Los elementos deben estar en tres filas ocupando a su padre, ver tarea para referencia de como debe quedar*/
+ul {
+    width: 450px;
+    list-style: none; /* Elimina los marcadores de lista */
+    padding: 0;
+    margin: 0;
+    border: 2px solid #4D7298;
+    display: flex; /* Habilita flexbox para la lista */
+    flex-wrap: wrap; /* Permite que los items se ajusten a varias lineas */
+    justify-content: center;
+}
+
+li {
+    background-color: #4D7298;
+    border: 2px solid #77A6B6;
+    border-radius: .5em;
+    color: #fff;
+    padding: .5em;
+    margin: .5em;
+    width: calc(25% - 1em); /* Ancho de cada item: 50% menos el margen */
+    box-sizing: border-box; /* Incluye padding y border en el ancho del elemento */
+}
+
+/* Tamaños especiales para "Cafe" y "Leche" */
+ul li:nth-child(9), /* Selecciona "Cafe" (el noveno objeto) */
+ul li:nth-child(10) { /* Selecciona "Leche" (el decimo objeto) */
+    width: calc(50% - 1em); /* Los dos elementos deben ocupar toda la ancho de la lista */
+}
