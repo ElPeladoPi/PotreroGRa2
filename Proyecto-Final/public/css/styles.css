@@ -1,0 +1,81 @@
+/* Buenas prácticas: no inline styles, ordenada por secciones. */
+
+/* Reset básico */
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  color: #0f172a;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+/* Encabezado y footer */
+header { background: linear-gradient(90deg, #0d6efd 0%, #6610f2 100%); color: rgb(255, 255, 255); }
+header h1 { font-weight: 600; }
+
+footer { border-top: 1px solid rgba(0,0,0,0.05); }
+
+/* Artículo principal */
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Imagen webp*/
+img.webp-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Imagen jpg*/
+img.jpg-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+/* Formulario: usa flexbox */
+.form-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Tarjeta lateral */
+.sidebar {
+  background: #fdfdfd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(15,17,42,0.04);
+}
+
+/* Media queries: mejoras responsive */
+@media (max-width: 768px) {
+  header .container { padding: 0 1rem; }
+}
+/* Layout principal con grid para tarjetas */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  transition: transform 0.2s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
